@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <section class="services">
+    <h2 class="section-title">Our Products</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="Always connected by bernardbodo_ Male keeping in….jpeg" alt="Voice Bundles" />
+        <h3>Voice Bundles</h3>
+        <p>Enjoy affordable local and international call packages. Stay connected with family, friends, and colleagues.</p>
+        <a href="#" class="btn-secondary">View Bundles</a>
+      </div>
+
+      <div class="service-card">
+        <img src="Data Across the Globe, for long-term travel….jpeg" alt="Data Packages" />
+        <h3>Data Packages</h3>
+        <p>Choose from daily, weekly, or monthly data plans that suit your browsing, streaming, or work needs.</p>
+        <a href="#" class="btn-secondary">Browse Plans</a>
+      </div>
+
+      <div class="service-card">
+        <img src="No wires allowed ✋🛑 STAY FOCUSED wallpaper in my….jpeg" alt="Devices & Gadgets" />
+        <h3>Devices & Gadgets</h3>
+        <p>Shop smartphones, routers, and accessories directly from MTN. Get great deals on the latest devices.</p>
+        <a href="#" class="btn-secondary">Shop Now</a>
+      </div>
+
+      <div class="service-card">
+        <img src="Mobile money payment logo_ A phone with dollar….jpeg" alt="MTN MoMo" />
+        <h3>MTN MoMo</h3>
+        <p>Send and receive money, pay bills, and access financial services all from your phone with MTN Mobile Money.</p>
+        <a href="#" class="btn-secondary">Explore MoMo</a>
+      </div>
+
+      <div class="service-card">
+        <img src="mtn-home.jfif" alt="MTN Home" />
+        <h3>MTN Home</h3>
+        <p>Reliable and fast home internet solutions for your everyday needs — from browsing to streaming.</p>
+        <a href="#" class="btn-secondary">Get Connected</a>
+      </div>
+
+      <div class="service-card">
+        <img src="MTN App.jfif" alt="MyMTN App" />
+        <h3>MyMTN App</h3>
+        <p>Manage your account, buy bundles, check balances, and access customer care — all in one place.</p>
+        <a href="#" class="btn-secondary">Download App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Animate product cards on scroll
+    const cards = document.querySelectorAll('.product-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+
+    // Hamburger menu toggle
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

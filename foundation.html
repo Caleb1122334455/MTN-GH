@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Foundation Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>MTN Ghana Foundation</h1>
+      <p>Improving lives through sustainable community investment.</p>
+    </div>
+  </section>
+
+  <!-- Foundation Content -->
+  <section class="foundation-info">
+    <div class="container">
+      <h2 class="section-title">Making a Difference</h2>
+      <p>
+        Established in 2007, the MTN Ghana Foundation is dedicated to improving lives and communities through impactful initiatives in health, education, and economic empowerment.
+      </p>
+
+      <div class="foundation-sectors">
+        <div class="sector-card">
+          <i class="fas fa-heartbeat fa-2x"></i>
+          <h3>Health</h3>
+          <p>We support the construction and refurbishment of health centers, provide medical equipment, and organize blood donation campaigns.</p>
+        </div>
+
+        <div class="sector-card">
+          <i class="fas fa-graduation-cap fa-2x"></i>
+          <h3>Education</h3>
+          <p>From scholarships to ICT labs and school buildings, we help make quality education accessible to underprivileged communities.</p>
+        </div>
+
+        <div class="sector-card">
+          <i class="fas fa-briefcase fa-2x"></i>
+          <h3>Economic Empowerment</h3>
+          <p>Our programs offer vocational training, youth entrepreneurship funding, and digital skills development.</p>
+        </div>
+      </div>
+
+      <h3>Over 170 Projects Completed</h3>
+      <p>We’ve touched millions of lives in all 16 regions of Ghana, focusing on long-term change and community impact.</p>
+
+      <a href="#" class="btn-secondary">Explore Our Projects</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

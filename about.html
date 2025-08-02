@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | About Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>About MTN Ghana</h1>
+      <p>We believe everyone deserves the benefits of a modern connected life.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">Who We Are</h2>
+      <p>
+        MTN Ghana is a leading telecommunications company providing voice, data, fintech, digital, and enterprise services to millions of Ghanaians. Since launching in 1996, we’ve grown to become the preferred network for individuals, businesses, and government.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        To lead the delivery of a bold new digital world to our customers.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To be the digital operator of choice, delivering a connected, brighter future for all.
+      </p>
+
+      <h3>Our Core Values</h3>
+      <ul class="values-list">
+        <li><i class="fas fa-check-circle"></i> Leadership</li>
+        <li><i class="fas fa-check-circle"></i> Innovation</li>
+        <li><i class="fas fa-check-circle"></i> Integrity</li>
+        <li><i class="fas fa-check-circle"></i> Relationships</li>
+        <li><i class="fas fa-check-circle"></i> Can-Do Attitude</li>
+      </ul>
+
+      <h3>Our Journey</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>1996</span>
+          <p>MTN Ghana launched mobile services.</p>
+        </div>
+        <div class="timeline-item">
+          <span>2007</span>
+          <p>Introduced Mobile Money (MoMo) to revolutionize financial inclusion.</p>
+        </div>
+        <div class="timeline-item">
+          <span>2018</span>
+          <p>MTN Ghana listed on the Ghana Stock Exchange.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Today</span>
+          <p>Serving over 25 million subscribers across the country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | Personal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Personal Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Made for You</h1>
+      <p>Affordable data, voice, and lifestyle services that fit your everyday needs.</p>
+      <a href="#" class="btn-primary">View Offers</a>
+    </div>
+  </section>
+
+  <!-- Personal Offers -->
+  <section class="personal-offers">
+    <h2 class="section-title">Personalized Services for You</h2>
+
+    <div class="offer-grid">
+      <div class="offer-card">
+        <img src="data.jfif" alt="Data Bundles">
+        <h3>Data Bundles</h3>
+        <p>Browse, stream, and chat with affordable data plans for every budget.</p>
+        <a href="#" class="btn-secondary">Buy Data</a>
+      </div>
+
+      <div class="offer-card">
+        <img src="Always connected by bernardbodo_ Male keeping in….jpeg" alt="Voice Offers">
+        <h3>Voice Packages</h3>
+        <p>Stay connected to friends and family with MTN voice bundles.</p>
+        <a href="#" class="btn-secondary">Get Voice Plan</a>
+      </div>
+
+      <div class="offer-card">
+        <img src="Mobile money payment logo_ A phone with dollar….jpeg" alt="MoMo Access">
+        <h3>Mobile Money (MoMo)</h3>
+        <p>Send, receive, and pay with ease using MoMo for everyday transactions.</p>
+        <a href="#" class="btn-secondary">Use MoMo</a>
+      </div>
+
+      <div class="offer-card">
+        <img src="MTN App.jfif" alt="MyMTN App">
+        <h3>MyMTN App</h3>
+        <p>Manage your MTN account, buy bundles, and check usage — all in one app.</p>
+        <a href="#" class="btn-secondary">Download App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

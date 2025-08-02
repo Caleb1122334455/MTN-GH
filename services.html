@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="connectivity.jpg" alt="Connectivity" />
+        <h3>Voice & Data Services</h3>
+        <p>High-quality voice calls and fast data connectivity tailored for both personal and business use.</p>
+        <a href="#" class="btn-secondary">Learn More</a>
+      </div>
+
+      <div class="service-card">
+        <img src="digital-world.jpg" alt="Digital Services" />
+        <h3>Digital Services</h3>
+        <p>Access a range of MTN digital platforms for music, TV, education, cloud storage, and more.</p>
+        <a href="#" class="btn-secondary">Explore</a>
+      </div>
+
+      <div class="service-card">
+        <img src="business-tools.jpg" alt="Enterprise Solutions" />
+        <h3>Enterprise Solutions</h3>
+        <p>Scalable telecom and IT solutions for SMEs and large businesses to grow and operate efficiently.</p>
+        <a href="#" class="btn-secondary">Get Started</a>
+      </div>
+
+      <div class="service-card">
+        <img src="Mobile money payment logo_ A phone with dollar….jpeg" alt="MoMo" />
+        <h3>Mobile Money (MoMo)</h3>
+        <p>Transfer money, pay bills, and shop online using our secure and convenient mobile financial service.</p>
+        <a href="#" class="btn-secondary">Use MoMo</a>
+      </div>
+
+      <div class="service-card">
+        <img src="a836a23e-b270-47f7-b3e6-b3334738d48c.jpeg" alt="Entertainment" />
+        <h3>Entertainment Packs</h3>
+        <p>Stream movies, music, and live sports with MTN’s entertainment bundles and app integrations.</p>
+        <a href="#" class="btn-secondary">Browse Packs</a>
+      </div>
+
+      <div class="service-card">
+        <img src="PIC slams MTN’s R23m resignation payment to Dabengwa – pendulum swings back.jpeg" alt="SIM Registration" />
+        <h3>SIM Registration</h3>
+        <p>Register or update your SIM card details quickly using your Ghana Card for seamless access.</p>
+        <a href="#" class="btn-secondary">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Animate service cards on scroll
+    const cards = document.querySelectorAll('.service-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+
+    // Hamburger menu toggle
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>

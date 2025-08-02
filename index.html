@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana Replica</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="mtn.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="top-menu-container">
+      <ul class="top-menu">
+        <li class="top-menu-item"><a class="top-menu-link" href="personal.html">Personal</a></li>
+        <li class="top-menu-item"><a class="top-menu-link" href="business.html">Business</a></li>
+        <li class="top-menu-item"><a class="top-menu-link" href="about.html">About</a></li>
+        <li class="top-menu-item"><a class="top-menu-link" href="investor.html">Investors</a></li>
+        <li class="top-menu-item"><a class="top-menu-link" href="foundation.html">Foundation</a></li>
+        <li class="top-menu-item"><a class="top-menu-link" href="momo.html">MoMo</a></li>
+      </ul>
+    </div>
+
+    <div class="hero-text">
+      <h1>Get Doing with MTN</h1>
+      <p>Stay connected, stay productive, stay entertained.</p>
+      <a href="#" class="btn-primary">Explore Offers</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="Always connected by bernardbodo_ Male keeping in….jpeg" alt="Connectivity" />
+        <h3>Connect with Loved Ones</h3>
+        <p>Stay in touch with affordable voice and data bundles.</p>
+        <a href="#" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="service-card">
+        <img src="Data Across the Globe, for long-term travel….jpeg" alt="Digital World" />
+        <h3>Discover the Digital World</h3>
+        <p>Explore MTN apps and digital services tailored for your lifestyle.</p>
+        <a href="#" class="btn-secondary">Explore</a>
+      </div>
+      <div class="service-card">
+        <img src="No wires allowed ✋🛑 STAY FOCUSED wallpaper in my….jpeg" alt="Productivity" />
+        <h3>Stay Productive</h3>
+        <p>Use MTN Business tools and solutions to stay ahead at work.</p>
+        <a href="#" class="btn-secondary">Get Started</a>
+      </div>
+      <div class="service-card">
+        <img src="Mobile money payment logo_ A phone with dollar….jpeg" alt="MoMo" />
+        <h3>Mobile Money (MoMo)</h3>
+        <p>Send, receive, and manage your finances easily with MoMo.</p>
+        <a href="#" class="btn-secondary">Use MoMo</a>
+      </div>
+      <div class="service-card">
+        <img src="a836a23e-b270-47f7-b3e6-b3334738d48c.jpeg" alt="Entertainment" />
+        <h3>Entertainment Packs</h3>
+        <p>Stream music, movies, and shows with our affordable bundles.</p>
+        <a href="#" class="btn-secondary">Browse Packs</a>
+      </div>
+      <div class="service-card">
+        <img src="PIC slams MTN’s R23m resignation payment to Dabengwa – pendulum swings back.jpeg" alt="SIM Registration" />
+        <h3>SIM Registration</h3>
+        <p>Register your SIM with your Ghana Card quickly and securely.</p>
+        <a href="#" class="btn-secondary">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Animate service cards on scroll
+    const cards = document.querySelectorAll('.service-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.animationPlayState = 'paused';
+      observer.observe(card);
+    });
+
+    // Hamburger menu toggle
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+</body>
+</html>

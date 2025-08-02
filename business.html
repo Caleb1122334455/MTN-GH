@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MTN Ghana | Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html">
+        <img src="mtn-logo.svg" alt="MTN Logo" class="logo" />
+      </a>
+      <div class="hamburger-icon" onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon" onclick="hideMenu()">
+          <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Business Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Empowering Your Business</h1>
+      <p>Innovative connectivity, cloud, and communication tools built for growth.</p>
+      <a href="#" class="btn-primary">Explore Solutions</a>
+    </div>
+  </section>
+
+  <!-- Business Solutions -->
+  <section class="business-solutions">
+    <h2 class="section-title">Business Solutions from MTN</h2>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <img src="Always connected by bernardbodo_ Male keeping in….jpeg" alt="Business Internet">
+        <h3>Business Internet</h3>
+        <p>Reliable high-speed internet to keep your teams connected 24/7.</p>
+        <a href="#" class="btn-secondary">View Plans</a>
+      </div>
+
+      <div class="solution-card">
+        <img src="hosting.jfif" alt="Cloud Services">
+        <h3>Cloud & Hosting</h3>
+        <p>Secure cloud storage and hosting solutions for your business data.</p>
+        <a href="#" class="btn-secondary">Learn More</a>
+      </div>
+
+      <div class="solution-card">
+        <img src="solution.jfif" alt="Enterprise Tools">
+        <h3>Enterprise Tools</h3>
+        <p>Custom voice, data, and communication packages for your organization.</p>
+        <a href="#" class="btn-secondary">Get a Quote</a>
+      </div>
+
+      <div class="solution-card">
+        <img src="support.jfif" alt="Support">
+        <h3>Dedicated Support</h3>
+        <p>24/7 technical support and account management tailored to your business.</p>
+        <a href="#" class="btn-secondary">Contact Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>MTN Ghana</h4>
+        <p>Leading provider of voice, data, fintech, digital, enterprise, and wholesale services in Ghana.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Bundles</a></li>
+          <li><a href="#">Mobile Money</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">MyMTN App</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@mtn.com.gh</p>
+        <p>Phone: +233 24 430 0000</p>
+        <p>Address: MTN House, Accra, Ghana</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MTN Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMenu() {
+      document.getElementById('navMenu').classList.add('active');
+    }
+
+    function hideMenu() {
+      document.getElementById('navMenu').classList.remove('active');
+    }
+  </script>
+
+</body>
+</html>
